@@ -114,13 +114,11 @@ plt.show()
 # In[26]:
 
 
-# For <=50K and >50K earnings for High School Graduates in the United States
+
 high_school_graduates = dataframe[(dataframe[' Adm-clerical'] == 'High School Grad') & (dataframe[' United-States'] == 'United-States')]
 
-# Count of High School Graduates earning <=50K in the United States
 count_earning_lessthan_50k = high_school_graduates[high_school_graduates[' <=50K'] == ' <=50K'].shape[0]
 
-# Count of High School Graduates earning >50K in the United States
 count_earning_morethan_50k = high_school_graduates[high_school_graduates[' <=50K'] == ' >50K'].shape[0]
 
 print("High School Graduates earning <=50K in the United States:", count_earning_lessthan_50k)
